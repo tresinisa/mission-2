@@ -17,6 +17,22 @@ boxes.forEach(box => {
         }
     })
 });
+//adding ping sound effect to green box
+boxes.forEach(box => {
+    box.addEventListener('click', function(){
+        if(box.classList.contains('green')){
+            pingSound.play();
+        }
+    })
+});
+//adding fart sound effect to red box
+boxes.forEach(box => {
+    box.addEventListener('click', function(){
+        if(box.classList.contains('red')){
+            fartSound.play();
+        }
+    })
+});
 //loop through the boxes and add an event listener to each
 boxes.forEach(box => {
     box.addEventListener('click', (event) => {
@@ -59,12 +75,5 @@ function handleRedBox(){
 };
 
 
-// function resetPage(){
-//     location.reload();
-// }
 
-
-// window.addEventListener('click', function(){
-//     resetPage();
-// })
 
