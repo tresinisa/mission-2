@@ -12,13 +12,6 @@ body{
     background-color: black;
 }
 
-#correct{
-    cursor: pointer;
-}
-#wrong{
-    cursor: pointer;
-}
-
 #red-box{
     position: absolute;
     left: 1370px;
